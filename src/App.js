@@ -19,7 +19,7 @@ function App() {
         <Sidebar />
         <>
           <Routes>
-            <Route path="/bot" element={<Start />} />
+            <Route path="/" element={<Start />} />
             <Route path="/name" element={<TableName />} />
             <Route path="/configure" element={<Configure />} />
             <Route path="/done" element={<DoneBot />} />
