@@ -6,7 +6,7 @@ import TableName from "./pages/TableName";
 import Configure from "./pages/Configure";
 import DoneBot from "./pages/DoneBot";
 import Mybots from "./pages/MyBots";
-import DetailsInfo from './pages/DetailsInfo';
+import DetailsInfo from "./pages/DetailsInfo";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Sidebar />
         <>
           <Routes>
-            <Route path="/" element={<Start />} />
+            <Route path="/bot" element={<Start />} />
             <Route path="/name" element={<TableName />} />
             <Route path="/configure" element={<Configure />} />
             <Route path="/done" element={<DoneBot />} />
