@@ -27,7 +27,7 @@ export default function Nav() {
           </span>
         </div>
 
-        <Popover.Group className="lg:flex lg:gap-x-12">
+        <Popover.Group className="flex gap-x-12">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Help center
           </a>

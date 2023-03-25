@@ -1,7 +1,7 @@
 export default function Sidebar() {
   return (
     <div className="flex ">
-      <div className="flex flex-col justify-between  h-screen p-3 border-black	 shadow w-60">
+      <div className=" lg:flex flex-col justify-between  h-screen p-3 border-black	shadow w-60">
         <div className="space-y-3">
           <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
