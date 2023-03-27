@@ -1,14 +1,14 @@
 export default function Sidebar() {
   return (
     <div className="flex ">
-      <div className=" lg:flex flex-col justify-between  h-screen p-3 border-black	shadow w-60">
+      <div className="flex sm:w-32 md:w-40 lg:w-60 flex-col items-center justify-between  h-screen p-3 border-black	shadow">
         <div className="space-y-3">
           <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               <li className="rounded-sm">
                 <a
                   href="#"
-                  className="flex items-center p-3 pl-24 space-x-1 rounded-md"
+                  className="flex items-center p-3 space-x-1 rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export default function Sidebar() {
               <li className="rounded-sm">
                 <a
                   href="#"
-                  className="flex items-center p-3 pl-24 space-x-1 rounded-md"
+                  className="flex items-center p-3  space-x-1 rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export default function Sidebar() {
               <li className="rounded-sm">
                 <a
                   href="#"
-                  className="flex items-center p-3 pl-24 space-x-1 rounded-md"
+                  className="flex items-center p-3 space-x-1 rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export default function Sidebar() {
           <li className="rounded-sm">
             <a
               href="#"
-              className="flex items-center p-3 pl-24 space-x-1 rounded-md"
+              className="flex items-center p-3 space-x-1 rounded-md"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -24,8 +24,8 @@ export default function Configure() {
           Configure your bot
         </p>
       </div>
-      <div className="flex  border-solid border-2 rounded border-slate-100 p-4">
-        <div className="pr-3 col-span-2 ">
+      <div className="flex sm:inline-block md:inline-block border-solid border-2 rounded border-slate-100 p-4 gap-3 lg:flex">
+        <div>
           <label className="w-44  block text-sm font-semibold leading-6 text-gray-900"></label>
           <div className="w-96 relative mt-2.5">
             <div className="absolute w-96 inset-y-0 left flex items-center">
@@ -50,17 +50,12 @@ export default function Configure() {
               className="block rounded-md border-0 py-2 px-3.5 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
             />
           </div>
-          <div>
-            <button className="text-sm font-thin flex pt-5">
-              <FaRegPlusSquare className="w-5 h-5 " />{" "}
-              <span className="pl-1">Add category</span>
-            </button>
-          </div>
+          
         </div>
 
-        <div className="pl-3  sm:col-span-2 ">
+        <div className="">
           <label className=" w-44 block text-sm font-semibold leading-6 text-gray-900"></label>
-          <div className="w-96 relative mt-2.5">
+          <div className="w-96 relative mt-2.5 ">
             <div className="absolute w-96 inset-y-0 left flex items-center">
               <label htmlFor=" country" className="sr-only"></label>
               <select
@@ -84,6 +79,12 @@ export default function Configure() {
           </div>
         </div>
       </div>
+      <div>
+            <button className="text-sm font-thin flex pt-5">
+              <FaRegPlusSquare className="w-5 h-5 " />{" "}
+              <span className="pl-1">Add category</span>
+            </button>
+          </div>
       <div className="mt-6 flex justify-between">
         <button
           type="submit"

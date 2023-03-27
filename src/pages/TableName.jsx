@@ -9,16 +9,11 @@ export default function Example() {
     name: "",
     messanger: "Telegram",
   });
-  const [messanger, seMessanger] = useState("");
 
   const handleInputChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
-
     setFormData({ ...formData, [name]: value });
-
-    console.log(name);
-    console.log(value);
   };
 
   return (
@@ -117,8 +112,12 @@ export default function Example() {
           </button>
           <button
             onClick={() => {
-              console.log(addBotInfo);
-              addBotInfo(formData.name, formData.messanger);
+              if (formData.name) {
+                addBotInfo(formData.name, formData.messanger);
+              } else {
+                alert("Please fill out both the category and name fields.");
+                return;
+              }
             }}
             type="submit"
             className="block w-18 rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
